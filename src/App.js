@@ -1,10 +1,10 @@
-
+import ProductsContextProvider from "./context/ProductsContextProvider";
 
 function App() {
   return (
-    <div>
+    <ProductsContextProvider>
       
-    </div>
+    </ProductsContextProvider>
   );
 }
 
