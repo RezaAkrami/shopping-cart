@@ -1,5 +1,6 @@
 import React from 'react';
 import { shorteTitel } from '../helper/functions';
+import {Link} from 'react-router-dom';
 
 const Card = ({data}) => {
 
@@ -15,11 +16,11 @@ const Card = ({data}) => {
 
             <div>
 
-                <a href="#">Details</a>
+                <Link to={`/details/${data.id}`}>Details</Link>
                 <div>
                     <button>Add</button>
                 </div>
-                
+
             </div>
         </div>
     );
